@@ -23,17 +23,17 @@ public class RedisTest {
     public void redisTest() {
         // redis存储数据
         String key = "name";
-        redisTemplate.opsForValue().set(key, "yukong");
+        redisTemplate.opsForValue().set(key, "qiuwei");
         // 获取数据
         String value = (String) redisTemplate.opsForValue().get(key);
-        System.out.println("获取缓存中key为" + key + "的值为：" + value);
+        System.out.println("key:" + key + ",value:" + value);
 
         User user = new User("qw",12);
 
-        String userKey = "yukong";
+        String userKey = "qiuwei";
         redisTemplate.opsForValue().set(userKey, user);
         User newUser = (User) redisTemplate.opsForValue().get(userKey);
-        System.out.println("获取缓存中key为" + userKey + "的值为：" + newUser);
+        System.out.println("key:" + userKey + ",value:" + newUser);
 
     }
 
