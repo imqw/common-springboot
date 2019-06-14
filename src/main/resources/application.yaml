@@ -1,13 +1,13 @@
 server:
-  port: 8989
+  port: 8080
 spring:
   redis:
     host: 172.30.66.104
     port: 6379
     # 密码 没有则可以不填
     password: 19e.com.cn
-    # 如果使用的jedis 则将lettuce改成jedis即可
     database: 0
+    # lettuce简单配置
     lettuce:
       pool:
         # 最大活跃链接数 默认8

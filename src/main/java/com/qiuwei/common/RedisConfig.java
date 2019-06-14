@@ -16,12 +16,12 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
  * redis配置
  *
  * @AutoConfigureAfter(RedisAutoConfiguration.class) 是让我们这个配置类在内置的配置类之后在配置，
- * 这样就保证我们的配置类生效，并且不会被覆盖配置
+ * 这样就保证我们的配置类生效，并且不会被覆盖配置  选择性配置
  * @Author: qiuwei@19pay.com.cn
  * @Version 1.0.0
  */
 @Configuration
-@AutoConfigureAfter(RedisAutoConfiguration.class)
+//@AutoConfigureAfter(RedisAutoConfiguration.class)
 public class RedisConfig {
 
 
